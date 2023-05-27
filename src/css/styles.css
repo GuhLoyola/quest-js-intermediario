@@ -1,0 +1,110 @@
+body {
+    background-image: url(../img/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.container {
+    max-width: 800px;
+    display: flex;
+    padding: 12px 45px;
+    align-items: center;
+}
+
+.texto .informacoes {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.texto .informacoes .titulo {
+    margin-bottom: 11px;
+}
+
+.texto .informacoes .titulo h1, .texto .informacoes .titulo h2{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.texto .informacoes .descricao {
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: white;
+    padding: 0 20px;
+    min-width: 340px;
+    height: 378px;
+}
+
+.formulario form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.formulario form input, .formulario form textarea {
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.formulario form .dados {
+    margin-bottom: 15px;
+    max-height: 100px;
+    position: relative;
+}
+
+.formulario form .dados input, .formulario form .dados textarea{
+    width: 100%;
+}
+
+.formulario form .dados input.campo-preenchido,  .formulario form .dados textarea.campo-preenchido{
+    border: 1px solid green;
+}
+
+.formulario form .dados input.campo-vazio, .formulario form .dados textarea.campo-vazio {
+    border: 1px solid red;
+}
+
+.formulario form .campo-obrigatorio {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 8px;
+    color: #F52E2E;
+    font-weight: 400;
+    display: none;
+}
+
+.formulario form .dados textarea {
+    height: 100px;
+    resize: none;
+}
+
+.formulario form p {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.formulario form a {
+    width: 100%;
+    text-align: center;
+    background-color: #3CCC87;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.formulario form a:hover {
+    background-color: hsl(151, 59%, 40%);
+}

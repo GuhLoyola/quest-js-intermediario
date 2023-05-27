@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest JavaScript Intermediário</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <section class="texto">
+            <div class="informacoes">
+                <div class="titulo">
+                    <h1>Ficou com dúvida?</h1>
+                    <h2>Nos mande uma mensagem!</h2>
+                </div>
+                <p class="descricao">
+                    Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de 24h.
+                </p>
+            </div>
+        </section>
+        <section class="formulario">
+            <form action="index.html">
+
+                <div class="dados">
+                    <label class="campo-obrigatorio ativo" for="nome">campo obrigatório</label>
+                    <input type="text" id="nome" placeholder="Nome completo *" class="campo">
+                </div>
+
+                <div class="dados">
+                    <label class="campo-obrigatorio ativo" for="email">campo obrigatório</label>
+                    <input type="text" id="email" placeholder="Email *" class="campo">
+                </div>
+
+                <div class="dados">
+                    <label class="campo-obrigatorio ativo" for="telefone">campo obrigatório</label>
+                    <input type="tel" id="telefone" placeholder="Telefone *" class="campo">
+                </div>
+
+                <div class="dados">
+                    <label class="campo-obrigatorio ativo" for="textarea">campo obrigatório</label>
+                    <textarea id="textarea" placeholder="Mensagem *" class="campo"></textarea>
+                </div>
+
+                <p>*campos obrigatórios</p>
+
+                <a href="#" id="btn-enviar" class="btn-enviar">Enviar</a>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
